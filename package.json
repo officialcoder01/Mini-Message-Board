@@ -1,0 +1,20 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "A basic message board for the odin project node.js course",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "message board",
+    "node.js"
+  ],
+  "author": "zionmusa",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
