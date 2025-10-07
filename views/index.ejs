@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <% messages.forEach(message => { %>
+            <div class="message">
+                <p><strong><%= message.user %>:</strong> <%= message.text %></p>
+                <p class="timestamp"><%= message.added.toLocaleString() %></p>
+                <p>
+                    <a class="view-details-button" href="/messages/<%= message.id %>">View Details</a>
+                </p>
+            </div>
+        <% }); %>
+        <button><a href="/new" class="new-message-button">New Message</a></button>
+    </body>
+    <style>
+        body {
+            font-family: Arial sans-serif;
+            font-size: 15px;
+            margin: 20px;
+            background-color: #010601;
+            color: #e6f2e6;
+        }
+
+        .new-message-button {
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+            color: white;
+            background-color: rgba(3, 72, 42, 0.588);
+        }
+
+        .view-details-button {
+            display: inline-block;
+            font-size: 14px;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(12, 131, 4, 0.938);
+            padding: 5px;
+        }
+    </style>
+</html>
