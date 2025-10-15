@@ -4,7 +4,8 @@
   "description": "A basic message board for the odin project node.js course",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "message board",
@@ -13,8 +14,10 @@
   "author": "zionmusa",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3"
   }
 }
