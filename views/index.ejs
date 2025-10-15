@@ -6,8 +6,8 @@
     <body>
         <% messages.forEach(message => { %>
             <div class="message">
-                <p><strong><%= message.user %>:</strong> <%= message.text %></p>
-                <p class="timestamp"><%= message.added.toLocaleString() %></p>
+                <p><strong><%= message.username %>:</strong> <%= message.message %></p>
+                <p class="timestamp"><%= message.created_at %></p>
                 <p>
                     <a class="view-details-button" href="/messages/<%= message.id %>">View Details</a>
                 </p>
