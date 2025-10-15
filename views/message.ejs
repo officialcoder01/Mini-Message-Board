@@ -4,10 +4,12 @@
     <title>Message Detail</title>
   </head>
   <body>
-    <h2>Message from <%= message.user %></h2>
-    <p><%= message.text %></p>
-    <p class="timestamp"><%= message.added.toLocaleString() %></p>
-
+    <h1>Message Detail</h1>
+    <div class="message-detail">
+      <p><strong>Username:</strong> <%= message.username %></p>
+      <p><strong>Message:</strong> <%= message.message %></p>
+      <p class="timestamp"><strong>Created At:</strong> <%= message.created_at %></p>
+    </div>
     <p><a href="/" class="open-button">Back to list</a></p>
   </body>
   <style>
